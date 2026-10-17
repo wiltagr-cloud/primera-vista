@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un pequeño universo para ti 💗</title>
+
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="estrellas-fondo">✦　 ✧　 ⋆　♡　 ✦　☾　 ✧</div>
+
+    <main class="contenedor">
+
+        <!-- PANTALLA 1 -->
+        <section class="pantalla activa" id="pantalla1">
+
+            <div class="luna">🌙</div>
+
+            <p class="subtitulo">Tengo algo preparado para ti...</p>
+
+            <h1>¡Holaaa! 💗</h1>
+
+            <p class="descripcion">
+                No es un regalo cualquiera,
+                es una pequeña aventura llena de sorpresas.
+            </p>
+
+            <div class="decoracion">✨ 💕 ✨</div>
+
+            <button onclick="siguientePantalla(2)">
+                Comenzar aventura 💌
+            </button>
+
+        </section>
+
+
+        <!-- PANTALLA 2 -->
+        <section class="pantalla" id="pantalla2">
+
+            <div class="icono">💌</div>
+
+            <h1>Una pequeña confesión...</h1>
+
+            <p class="descripcion">
+                Hay personas que llegan y hacen
+                que un día normal se vuelva especial.
+            </p>
+
+            <p class="mensaje">
+                Y bueno... tú tienes algo de eso. 🥰
+            </p>
+
+            <button onclick="siguientePantalla(3)">
+                ¿Qué más hay? 👀
+            </button>
+
+        </section>
+
+
+        <!-- PANTALLA 3 -->
+        <section class="pantalla" id="pantalla3">
+
+            <div class="icono">⭐</div>
+
+            <h1>Elige tu estrellita</h1>
+
+            <p class="descripcion">
+                Cada estrella tiene un mensajito escondido.
+                ¡Elige una!
+            </p>
+
+            <div class="estrellas">
+
+                <button class="estrella" onclick="mostrarMensaje(0)">
+                    ⭐
+                </button>
+
+                <button class="estrella" onclick="mostrarMensaje(1)">
+                    🌟
+                </button>
+
+                <button class="estrella" onclick="mostrarMensaje(2)">
+                    ✨
+                </button>
+
+            </div>
+
+            <div id="mensajeEstrella" class="mensaje">
+                Tu sorpresa aparecerá aquí 💗
+            </div>
+
+            <button onclick="siguientePantalla(4)">
+                Continuar aventura 🌙
+            </button>
+
+        </section>
+
+
+        <!-- PANTALLA 4 -->
+        <section class="pantalla" id="pantalla4">
+
+            <div class="icono">🎀</div>
+
+            <h1>Una pregunta importante...</h1>
+
+            <p class="descripcion">
+                Si pudieras elegir una de estas opciones,
+                ¿cuál sería?
+            </p>
+
+            <div class="opciones">
+
+                <button onclick="responder('Una salida con muchas risas 😂')">
+                    😂 Una salida con muchas risas
+                </button>
+
+                <button onclick="responder('Una tarde de películas 🍿')">
+                    🍿 Una tarde de películas
+                </button>
+
+                <button onclick="responder('Una conversación hasta perder la hora 🌙')">
+                    🌙 Una conversación hasta perder la hora
+                </button>
+
+            </div>
+
+            <div id="respuesta" class="mensaje"></div>
+
+            <button onclick="siguientePantalla(5)">
+                Descubrir última sorpresa 💝
+            </button>
+
+        </section>
+
+
+        <!-- PANTALLA 5 -->
+        <section class="pantalla" id="pantalla5">
+
+            <div class="icono">💖</div>
+
+            <h1>¡Llegaste al final!</h1>
+
+            <p class="descripcion">
+                Y la última sorpresa es...
+            </p>
+
+            <div class="carta">
+
+                <h2>Un mensajito para ti 💗</h2>
+
+                <p>
+                    No sé qué tenga preparado el destino,
+                    pero conocer personas como tú
+                    siempre es algo bonito.
+                </p>
+
+                <p>
+                    Nunca pierdas esa sonrisa. ✨
+                </p>
+
+                <div class="decoracion">🌷 💕 🌷</div>
+
+            </div>
+
+            <p class="subtitulo">
+                Fin de esta pequeña aventura 🌙
+            </p>
+
+            <button onclick="reiniciarJuego()">
+                Volver a jugar ↻
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        Hecho con cariño 💗 y un poquito de magia ✨
+    </footer>
+
+</body>
+</html>
